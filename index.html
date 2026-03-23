@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="./img/favicon-CV-MaikolJM.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maikol Jiménez Mejías — CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,7 +89,23 @@
 
 <nav id="topnav" class="navbar navbar-expand-lg sticky-top border-bottom border-opacity-25">
   <div class="container">
-    <a class="navbar-brand fw-bold text-white" href="#home">&lt;MaikolJM&gt;Sitio en construcción<span class="text-info">.</span></a>
+    <!-- <a class="navbar-brand fw-bold text-white" href="#home">&lt;MaikolJM&gt;Sitio en construcción<span class="text-info">.</span></a> -->
+    <a 
+    class="navbar-brand d-flex align-items-center py-1 me-3"
+      href="#home"
+      aria-label="Ir al inicio"
+    >
+      <img
+        src="./img/Logo-CV-MaikolJM.png"
+        alt="Logo CV digital Maikol"
+        class="img-fluid d-block"
+        style="
+          width: clamp(150px, 22vw, 260px);
+          max-width: 50%;
+          height: auto;
+          object-fit: contain;"
+      >
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -134,26 +151,27 @@
   <section id="about" class="container mb-5">
     <h2 class="section-title">Sobre mí</h2>
     <p>Desarrollador Full-Stack con experiencia en PHP/Laravel y JavaScript, bases de datos relacionales y prácticas de QA. 
-      Interesado en roles de desarrollo de Apps Web o QA; actualmente concentrado en formación DevOps. Con una fuerte orientación a
-      la calidad, la docencia y la mejora continua.</p>
+      Interesado en roles de desarrollo de Apps Web o QA; actualmente concentrado en formación DevOps en paralelo a React/TypeScript.
+      Con una fuerte orientación a la calidad, la docencia y la mejora continua.</p>
   </section>
 
   <section id="skills" class="container mb-5">
     <h2 class="section-title">Habilidades</h2>
     <div class="row g-3">
-      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Lenguajes</span><span class="skill-list">JavaScript (ES6+), PHP, SQL</span></div></div>
-      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Frontend</span><span class="skill-list">HTML5, CSS3, Bootstrap, Tailwind</span></div></div>
+      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Lenguajes</span><span class="skill-list">JavaScript, PHP, SQL y otros</span></div></div>
+      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Frontend</span><span class="skill-list">HTML5, CSS3, Bootstrap, Tailwind, React y TypeScript</span></div></div>
       <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Backend</span><span class="skill-list">Laravel (REST APIs, middlewares, autenticación)</span></div></div>
       <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Bases de datos</span><span class="skill-list">MySQL/PostgreSQL (modelado, índices, consultas)</span></div></div>
       <div class="col-md-6"><div class="skill-item"><span class="skill-cat">QA / Testing</span><span class="skill-list">Testing manual, Postman, Swagger</span></div></div>
-      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">DevOps / Cloud</span><span class="skill-list">Git/GitHub Flow, GitHub Pages, DigitalOcean</span></div></div>
+      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">DevOps / Cloud</span><span class="skill-list">Git/GitHub Flow, GitHub Pages, DigitalOcean y otros</span></div></div>
+      <div class="col-md-6"><div class="skill-item"><span class="skill-cat">Inglés</span><span class="skill-list">B1</span></div></div>
     </div>
   </section>
 
   <hr>
 
   <section id="projects" class="container mb-5">
-    <h2 class="section-title">Proyectos (Por Integrar más Proyectos)</h2>
+    <h2 class="section-title">Proyectos/Portafolio (Por Integrar más Proyectos)</h2>
     <div class="row g-3">
       <!-- <div class="col-md-6">
         <div class="card h-100 shadow-sm border-0">
@@ -249,6 +267,21 @@
           </div>
         </div>
       </div>
+      <div class="col-md-6">
+        <a href="https://maikoljm0209.github.io/enyogo-news/" target="_blank" class="card-link-stretch text-decoration-none">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="card-title">SPA (Single Page Application) de noticias de tecnología en español - React + TypeScript + Bootstrap + GitHub Pages
+              </h5>
+              <ul class="mb-0">
+                <li>Despliegue de noticias de tecnología en español sucedidas en las últimas 24 horas.</li>
+                <li>En próxima versión 1.2.0. filtado por categorías - IA, Seguridad, App's y Startups</li>
+                <li>Tipos de Cambios de divisas.</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -264,11 +297,17 @@
             <h5 class="mb-1">Linúxtica Software</h5>
             <p class="working-dates">2018 – Actualidad</p>
           </div>
-          <div class="text-primary fw-semibold mb-2">Full-Stack / PM / Scrum Facilitator</div>
+          <div class="text-primary fw-semibold mb-2">Full-Stack / PM / Scrum / Facilitator / QA / Jefatura</div>
           <ul class="mb-0">
-            <li>Desarrollo de módulos Laravel + JS (autenticación, CRUD, reportes).</li>
+            <li>Desarrollo de módulos Laravel + JS + Livewire (autenticación, mantenimientos, reportes, etc).</li>
             <li>Diseño de APIs REST documentadas (Swagger/Postman).</li>
-            <li>Despliegues en DigitalOcean (backups/restore, hardening básico).</li>
+            <li>Despliegues en DigitalOcean (backups/restore, hardening básico) y otros hosting providers.</li>
+            <li>Creación y mantenimiento de VM en servidores para workstation y entornos de prueba.</li>
+            <li>Liderar equipos de desarrollo para la entrega continua de resultados a clientes (PM).</li>
+            <li>Estimaciones de tiempo, costos de proyectos además de contratación de recurso humanos para proyectos.</li>
+            <li>Profesor en cursos de programación para el DCT de Linúxtica.</li>
+            <li>Redacción de Test Cases apartir de las historias de usuario y tareas con su respectiva ejecución más reportes de bugs.</li>
+            <li>Jefatura del Departamento de Servicio al Cliente.</li>
           </ul>
           <a href="https://linuxtica.com" target="_blank">WebSite de la empresa</a>
         </div>
@@ -287,6 +326,21 @@
             <li>Actualización de materiales y evaluación por competencias.</li>
           </ul>
           <a href="https://ucatolica.ac.cr" target="_blank">WebSite de la Universidad</a>
+        </div>
+      </div>
+
+            <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="d-flex justify-content-between flex-wrap">
+            <h5 class="mb-1">Urcozon (Unión de Cooperativas de la Zona Norte)</h5>
+            <p class="working-dates">05/2017 – 12/2019</p>
+          </div>
+          <div class="text-primary fw-semibold mb-2">Profesor de Tecnologías</div>
+          <ul class="mb-0">
+            <li>Impartir cursos de capacitación en distintas herramientas tecnológicas al personas de las cooperativas afiliadas a Urcozon talez como Microsoft Office desde nivel básico hasta avanzado y sistemas arduino.</li>
+          </ul>
+          <a href="https://www.facebook.com/URCOZON" target="_blank">Página de Facebook URCOZON</a>
         </div>
       </div>
 
@@ -311,7 +365,7 @@
             <h5 class="mb-1">MEP</h5>
             <p class="working-dates">2015</p>
           </div>
-          <div class="text-primary fw-semibold mb-2">Profesor de Informática en Programación</div>
+          <div class="text-primary fw-semibold mb-2">Profesor de Informática en Programación (Liceo de Florencia San Carlos)</div>
           <ul class="mb-0">
             <li>Impartición de contenidos y evaluación en entornos educativos públicos.</li>
           </ul>
@@ -328,15 +382,27 @@
     <div class="edu p-3">
       <div class="edu-item d-flex justify-content-between flex-wrap">
         <div><strong>Ingeniería del Software</strong> — Universidad Técnica Nacional</div>
-        <div class="text-muted">2014 – 2017</div>
+        <div class="working-dates">2014 – 2017</div>
       </div>
       <div class="edu-item d-flex justify-content-between flex-wrap">
         <div><strong>Diplomado en Tecnologías de Información</strong> — Universidad Técnica Nacional</div>
-        <div class="text-muted">2014 – 2015</div>
+        <div class="working-dates">2014 – 2015</div>
       </div>
       <div class="edu-item d-flex justify-content-between flex-wrap">
         <div><strong>Ingeniería en Computación (inconclusa)</strong> — Instituto Tecnológico de Costa Rica</div>
-        <div class="text-muted"></div>
+        <div class="working-dates"> --- </div>
+      </div>
+      <div class="edu-item d-flex justify-content-between flex-wrap">
+        <div><strong>Curso de Aseguramiento en la Calidad de Software (QA Testing)</strong> — DCT Linúxtica</div>
+        <div class="working-dates">2023</div>
+      </div>
+      <div class="edu-item d-flex justify-content-between flex-wrap">
+        <div><strong>Curso de QA Backend (Testeo de API’s y Bases de Datos)</strong> — DCT Linúxtica</div>
+        <div class="working-dates">2024</div>
+      </div>
+      <div class="edu-item d-flex justify-content-between flex-wrap">
+        <div><strong>Curso de Programación Asistida por IA</strong> — DCT Linúxtica</div>
+        <div class="working-dates">2026</div>
       </div>
     </div>
   </section>
@@ -357,7 +423,7 @@
       <div class="col-md-6">
         <div class="p-4 rounded-4" style="background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.06)">
           <p class="mb-2 text-white-50">Descarga una copia de mi CV:</p>
-          <a class="btn btn-outline-light" href="Maikol_Jimenez_Mejias_CV_2025.docx" download><i class="bi bi-download me-2"></i>Descargar CV (.docx)</a>
+          <a class="btn btn-outline-light" href="https://github.com/maikoljm0209/cv-maikoljm/blob/main/Maikol_Jimenez_Mejias_CV_2026.pdf" target="_blank"><i class="bi bi-download me-2"></i>Descargar CV (.pdf)</a>
         </div>
       </div>
     </div>
@@ -388,8 +454,8 @@
 
 <footer class="py-4 border-top border-opacity-25">
   <div class="container d-flex justify-content-between flex-wrap">
-    <span><b> &lt;/MaikolJM&gt; </b> © Maikol Jiménez Mejías · Desarrollador Web Full-Stack | QA Testing</span>
-    <span class="text-white-50">Hecho con Bootstrap 5</span>
+    <span><b class="text-info"> &lt;MaikolJM&gt; </b> © Maikol Jiménez Mejías · Desarrollador Web Full-Stack | QA Testing <b class="text-info"> &lt;/MaikolJM&gt; </b></span>
+    <span class="text-white-50">Hecho con HTML5 + Bootstrap 5.3 + CSS + Vanilla JS</span>
   </div>
 </footer>
 
